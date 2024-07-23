@@ -14,3 +14,4 @@
 - [Project 3 - Views and Modifiers](/ViewsAndModifiers/)
 - [Milestone 1 - Rock Paper Scissors](/RockPaperScissors/)
 - [Project 4 - Better Rest](/BetterRest/)
+- [Project 5 - Word Scramble](/BetterRest/)

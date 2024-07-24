@@ -1,6 +1,6 @@
 <div align="center">
 <h1>100 Days of SwiftUI</h1>
-<h3>Current Day: 28</h3>
+<h3>Current Day: 31</h3>
   
 ![Swift 5.10](https://img.shields.io/badge/Swift-5.10-orange?style=flat&logo=swift) [![Xcode 15.4](https://img.shields.io/badge/Xcode-15.4-007ACC?style=flat&logo=Xcode&logoColor=blue)](https://developer.apple.com/xcode/)
 </div>
@@ -14,4 +14,4 @@
 - [Project 3 - Views and Modifiers](/ViewsAndModifiers/)
 - [Milestone 1 - Rock Paper Scissors](/RockPaperScissors/)
 - [Project 4 - Better Rest](/BetterRest/)
-- [Project 5 - Word Scramble](/BetterRest/)
+- [Project 5 - Word Scramble](/WordScramble/)

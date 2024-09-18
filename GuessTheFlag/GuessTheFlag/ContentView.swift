@@ -16,6 +16,10 @@ struct ContentView: View {
     @State private var score = 0
     @State private var finish = ""
     
+    @State private var rotateAmount = [0.0, 0.0, 0.0]
+    @State private var opacityAmount = [1.0, 1.0, 1.0]
+    @State private var scaleAmount = [1.0, 1.0, 1.0]
+    
     
     var body: some View {
         ZStack {
@@ -45,6 +49,10 @@ struct ContentView: View {
                                 .clipShape(.buttonBorder)
                                 .shadow(radius: 5)
                         }
+                        .rotation3DEffect(Angle(degrees: rotateAmount[number]), axis: (x: 0, y: 1, z: 0))
+                        .opacity(opacityAmount[number])
+                        .scaleEffect(scaleAmount[number])
+                        .animation(.default, value: scaleAmount)
                     }
                 }
                 .frame(maxWidth: .infinity)
@@ -77,7 +85,14 @@ struct ContentView: View {
     }
     
     func flagTapped(_ number: Int) {
-        var selectedAnswer = countries[number]
+        let selectedAnswer = countries[number]
+        
+        rotateAmount[number] += 360
+        for notTapped in 0..<3 where notTapped != number {
+                    opacityAmount[notTapped] = 0.25
+                    scaleAmount[notTapped] = 0.85
+                }
+        
         if number == correctAnswer {
             scoreTitle = "Correct"
             score += 1
@@ -96,11 +111,17 @@ struct ContentView: View {
     func askQuestion() {
         countries.shuffle()
         correctAnswer = Int.random(in: 0...2)
+        
+        opacityAmount = [1.0, 1.0, 1.0]
+        scaleAmount = [1.0, 1.0, 1.0]
     }
     
     func reset() {
         countries.shuffle()
         score = 0
+        
+        opacityAmount = [1.0, 1.0, 1.0]
+        scaleAmount = [1.0, 1.0, 1.0]
     }
 }
 

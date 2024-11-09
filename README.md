@@ -1,6 +1,6 @@
 <div align="center">
 <h1>100 Days of SwiftUI</h1>
-<h3>Current Day: 38</h3>
+<h3>Current Day: 42</h3>
   
 ![Swift 6](https://img.shields.io/badge/Swift-6-orange?style=flat&logo=swift) [![Xcode 16](https://img.shields.io/badge/Xcode-16-007ACC?style=flat&logo=Xcode&logoColor=blue)](https://developer.apple.com/xcode/)
 </div>
@@ -16,3 +16,4 @@
 - [Project 4 - Better Rest](/BetterRest/)
 - [Project 5 - Word Scramble](/WordScramble/)
 - [Project 6 - iExpense](/iExpense/)
+- [Project 7 - Moonshot](/Moonshot/)
